@@ -18,3 +18,12 @@ function someMath(x, y) {
     return Math.round(set)
 }
 document.getElementById("demo").innerHTML = someMath(12, 540);
+
+/*document.onclick = function() {
+    alert("you clicked");
+}*/
+
+function diceRoll(x) {
+    var diceResult = Math.floor((Math.random() * x) + 1);
+    document.getElementById("spell").innerHTML = diceResult;
+}
